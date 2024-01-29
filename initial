@@ -1,0 +1,25 @@
+class InitialInterface{
+  void draw(){
+    fill(0, 255, 255);
+    text("HELLO", 1280/2, 720/2);
+  }
+}
+
+
+void setup(){
+  //set the size of the window
+  size(1280, 720);
+  //set the initial colour/background
+  background(255,255,255);
+}
+
+void draw(){
+  //
+  if(mousePressed){
+    stroke(0, 255, 255);
+    
+    line(pmouseX,pmouseY, mouseX, mouseY);
+  }
+  InitialInterface deIt = new InitialInterface();
+  deIt.draw();
+}
